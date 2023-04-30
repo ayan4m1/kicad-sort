@@ -2,10 +2,11 @@
   "author": "ayan4m1 <andrew@bulletlogic.com>",
   "description": "Sort KiCAD files for Git versioning",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/jest": "^29.4.0",
-    "@types/node": "^18.14.1",
+    "@types/node": "^18.16.3",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "auto-changelog": "^2.4.0",
@@ -45,5 +46,12 @@
   },
   "type": "module",
   "types": "lib/index.d.ts",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "dependencies": {
+    "commander": "^10.0.1",
+    "peggy": "^3.0.2",
+    "s-expression.js": "^0.6.4",
+    "ts-pegjs": "../node_modules/ts-pegjs/",
+    "winston": "^3.8.2"
+  }
 }
